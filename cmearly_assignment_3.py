@@ -127,3 +127,76 @@ print(f" Social Points: {social_points}")
 print(f" Stress Level: {stress_level}")
 print(f"------------------------------------")
 
+opportunity_type = ["Research", "Sports"]
+research_opportunity = "Research"
+sports_opportunity = "Sports"
+if opportunity_type is research_opportunity:
+    print("You got a research opportunity! This could boost your GPA.")
+    current_gpa += 0.5
+else:
+    print("No research opportunities came your way this semester.")
+if opportunity_type is not research_opportunity:
+    print("You missed the research opportunity and focused elsewhere.")
+    social_points += 5
+if opportunity_type is sports_opportunity:
+    print("You got a sports opportunity! This could boost your social life.")
+    social_points += 15
+else:
+    print("No sports opportunities came your way this semester.")
+if opportunity_type is not research_opportunity:
+    print("You missed the sports opportunity and focused elsewhere.")
+    current_gpa += 0.25
+print(f" ----- Stats after Decision 3 ----- ")
+print(f" Current GPA: {current_gpa:.2f}")
+print(f" Student Hours: {study_hours}")
+print(f" Social Points: {social_points}")
+print(f" Stress Level: {stress_level}")
+print(f"------------------------------------")
+
+
+if choice == "A":
+    if current_gpa >= 3.5:
+        if stress_level < 30:
+            print("Ending 1: Your light course allowed you to focus and excel, good job!")
+        else:
+            print("Ending 2: Great GPA but too stressed. Take a break!")
+    elif current_gpa >= 3.0:
+        if social_points >= 50:
+            print("Ending 3: Balanced student! Good GPA and social life.")
+        else:
+            print("Ending 4: GPA okay but lacking social life. Relax more!")
+    else:
+        print("Ending 5: Struggling student. Need to focus more on academics.")
+
+if choice == "B":
+    if current_gpa >= 3.0:
+        if stress_level < 30:
+            print("Ending 1: You chose the perfect workload balance for yourself, and you profited, good work!")
+        else:
+            print("Ending 2: Great GPA but too stressed. Take a break!")
+    elif current_gpa >= 2.5:
+        if social_points >= 50:
+            print("Ending 3: Balanced student! Good GPA and social life.")
+        else:
+            print("Ending 4: GPA okay but lacking social life. Relax more!")
+    else:
+        print("Ending 5: Struggling student. Need to focus more on academics.")
+
+
+
+
+if choice == "C":
+    if current_gpa >= 3.0:
+        if stress_level < 30:
+            print("Ending 1: Heavy courseload but you managed to pull through, nice job!")
+        else:
+            print("Ending 2: Great GPA but too stressed. Take a break!")
+    elif current_gpa >= 2.0:
+        if social_points >= 50:
+            print("Ending 3: Balanced student! Good GPA and social life.")
+        else:
+            print("Ending 4: GPA okay but lacking social life. Relax more!")
+    else:
+        print("Ending 5: Struggling student. Need to focus more on academics.")
+if current_gpa != 4.0:
+
